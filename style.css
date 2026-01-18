@@ -1,0 +1,87 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Month & Week */
+.month-header, .week-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.month-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+.week-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #4f46e5;
+}
+.subtitle {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Week navigation */
+.week-navigation {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 8px;
+}
+.week-btn {
+  padding: 6px 10px;
+  background: #f3f4f6;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 13px;
+  transition: all 0.15s;
+}
+.week-btn:hover { background: #e5e7eb; }
+.week-btn.active { background: #4f46e5; color: white; }
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: #4f46e5;
+  width: 0%;
+  transition: width 0.3s ease;
+  border-radius: 6px 0 0 6px;
+}
+.progress-text {
+  font-size: 12px;
+  color: #4b5563;
+  margin-top: 2px;
+  text-align: right;
+}
+
+/* Todos */
+.add-form { display: flex; gap: 8px; margin-bottom: 12px; }
+.add-form input { flex: 1; padding: 6px; }
+.add-form button { padding: 6px 12px; background: #4f46e5; color: white; border: none; border-radius: 6px; }
+.todo-list { list-style: none; padding: 0; }
+.todo-item { display: flex; align-items: center; gap: 6px; padding: 6px; background: white; border-radius: 6px; margin-bottom: 6px; }
+.checkbox { width: 28px; height: 28px; border: 2px solid #4f46e5; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: bold; padding: 0; line-height: 1; background: white; color: #4f46e5; }
+.todo-item.completed .checkbox { background: #4f46e5; color: white; }
+.edit-form { flex: 1; display: flex; gap: 4px; }
+.edit-form input { flex: 1; padding: 4px; }
+.edit-form button { padding: 4px 8px; background: #10b981; color: white; border: none; border-radius: 4px; }
+.delete { padding: 4px 8px; background: #ef4444; color: white; border: none; border-radius: 4px; }
