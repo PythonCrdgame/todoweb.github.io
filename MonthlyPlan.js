@@ -26,4 +26,5 @@ monthlyPlanSchema.virtual("progress").get(async function () {
   return Math.round(total / weeks.length);
 });
 
-module.exports = mongoose.model("MonthlyPlan", monthlyPlanSchema);
+module.exports = mongoose.models.MonthlyPlan || mongoose.model("MonthlyPlan", monthlyPlanSchema);
+
